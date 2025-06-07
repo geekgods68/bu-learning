@@ -1,37 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Exercise 1: HTML Building-U</title>
 </head>
 <body>
-    <h1>Exercise 1 by Advik Punugu</h1>
-    <h4>Date submitted: 03/06/2025</h4>
-    <table>
-        <style>
-            table, th, td {
-  border: 1px solid white;
-  border-collapse: collapse;
-}
-th, td {
-  background-color: #96D4D4;
-}
-        </style>
-        <tr>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td colspan="2">Favourite Movie</td>
-            <td>Favourite Song</td>
-            <td>Favourite Video</td>
-        </tr>
-        <tr>
-            <td>Advik</td>
-            <td>Punugu</td>
-            <td colspan="2">The Amazing Spiderman</td>
-            <td><iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/sg/album/nokia/1796127242?i=1796127375"></iframe></td>
-            <td><video src="https://content.codecademy.com/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" controls></video></td>
-        </tr>
-    </table>
+
+  <!-- Heading -->
+  <h1>Exercise 1: HTML Building-U</h1>
+  <h2>Date of Submission: June 7, 2025</h2>
+
+  <!-- Table Section -->
+  <h3>Favorite Media Table</h3>
+  <table border="1" cellspacing="0" cellpadding="10">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Favorite Movie Image</th>
+      <th>Favorite Music Audio Sample</th>
+      <th>Favorite Video Sample</th>
+    </tr>
+    <tr>
+  <td>Advik</td>
+  <td>Punugu</td>
+  <td>
+    <a href="https://en.wikipedia.org/wiki/Inception">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg" width="100" alt="Inception Poster">
+    </a>
+  </td>
+  <td>
+    <!--Audio goes here-->
+  </td>
+  <td>
+     <video width="200" controls>
+  <source src="adventure_time_clip.mp4" type="video/mp4">
+</video>
+  </td>
+ 
+</tr>
+
+
+  </table>
+
+  <!-- Form Section -->
+  <h3>User Information Form</h3>
+  <form>
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter a strong password"><br><br>
+
+    <label>Available Days:</label><br>
+    <input type="checkbox" name="day" value="Monday"> Monday<br>
+    <input type="checkbox" name="day" value="Tuesday"> Tuesday<br>
+    <input type="checkbox" name="day" value="Wednesday"> Wednesday<br>
+    <input type="checkbox" name="day" value="Thursday"> Thursday<br>
+    <input type="checkbox" name="day" value="Friday"> Friday<br><br>
+
+    <label for="time">Available Time:</label><br>
+    <select id="time" name="time">
+      <option value="morning">Morning</option>
+      <option value="afternoon">Afternoon</option>
+      <option value="evening">Evening</option>
+    </select><br><br>
+
+    <label>Working on a New Website?</label><br>
+    <input type="radio" id="yes" name="website" value="yes" checked>
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="website" value="no">
+    <label for="no">No</label><br><br>
+
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter any comments here..."></textarea><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
 </body>
 </html>
